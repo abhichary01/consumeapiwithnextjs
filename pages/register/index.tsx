@@ -41,10 +41,10 @@ export default function Register() {
   return (
     <div>
       <b>Add post</b>
-      <Form onSubmit={handlePostDelivery}>
+      <Form>
    <Form.Group className="mb-3" controlId="formBasicEmail">
      <Form.Label>Email address</Form.Label>
-     <Form.Control type="email" className="form-control" placeholder="Enter email" onChange={updatePost} />
+     <Form.Control type="email" className="form-control" placeholder="Enter email"  />
      <Form.Text className="text-muted">
        We'll never share your email with anyone else.
      </Form.Text>
@@ -52,12 +52,12 @@ export default function Register() {
 
    <Form.Group className="mb-3" controlId="formBasicPassword">
      <Form.Label>Name</Form.Label>
-     <Form.Control type="name" className="form-control" placeholder="name" onChange={updatePost}/>
+     <Form.Control type="name" className="form-control" placeholder="name" />
    </Form.Group>
    <Form.Group className="mb-3" controlId="formBasicCheckbox">
      <Form.Check type="checkbox" label="Check me out" />
    </Form.Group>
-   <Button variant="primary" size="lg" className="btn btn-dark btn-lg btn-block text-center" type="submit">
+   <Button variant="primary" size="lg" className="btn btn-dark btn-lg btn-block text-center" href='/create'>
      Submit
    </Button>
  </Form>
